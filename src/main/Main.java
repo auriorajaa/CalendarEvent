@@ -2,6 +2,7 @@ package main;
 
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.time.LocalDate;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,7 +20,9 @@ public class Main {
 		
 		JPanel mainPanel = new JPanel(new GridLayout(1, 2, 0, 0));
 		
-		mainPanel.add(new Calendar());
+		LocalDate date = LocalDate.now();
+		
+		mainPanel.add(new Calendar(date.getYear(), date.getMonthValue(), date, mainPanel));
 		mainPanel.add(new Events());
 		
 		frame.getContentPane().add(mainPanel);

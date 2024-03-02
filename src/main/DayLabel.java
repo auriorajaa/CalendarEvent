@@ -8,6 +8,11 @@ import javax.swing.JLabel;
 
 public class DayLabel extends JLabel {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public DayLabel(String text, Color background, Color foreground, boolean btn) {
 		setText(text);
 		setHorizontalAlignment(JLabel.CENTER);
