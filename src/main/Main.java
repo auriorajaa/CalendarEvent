@@ -10,6 +10,8 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
+		// MAIN METHOD
+		
 		JFrame frame = new JFrame("Calendar Event");
 		frame.setSize(900, 500);
 		frame.setLocationRelativeTo(null);
