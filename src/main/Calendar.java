@@ -22,7 +22,7 @@ public class Calendar extends JPanel {
 
 	public Calendar(int year, int month, LocalDate selectedDay, JPanel mainPanel) {
 
-		setBackground(Color.decode("#F6F6F6"));
+		setBackground(Color.white);
 		setLayout(new BorderLayout(30, 30));
 		setBorder(BorderFactory.createEmptyBorder(40, 30, 20, 20));
 
